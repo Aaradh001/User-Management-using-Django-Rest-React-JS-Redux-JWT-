@@ -1,0 +1,2 @@
+# User-Management-using-Django-Rest-React-JS-Redux-JWT-
+This web application is built using React, Redux, Django Rest Framework, and JWT authentication. It provides a user-friendly interface for both users and admin. Users can sign up, log in, view and edit their profiles including the profile image.  On the admin side, CRUD (Create, Read, Update, Delete) operations can be performed on user accounts.
