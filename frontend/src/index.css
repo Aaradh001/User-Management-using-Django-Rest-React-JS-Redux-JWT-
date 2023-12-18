@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.home-bg {
+  background-image: url("./images/homebg.jpg");
+}
+.login-bg {
+  background-color: rgb(247, 247, 247);
+}
+.reg-bg {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0.3));
+  /* url('./images/reg-bg.jpg'); */
+  /* background-size: cover; */
+}
+.input-effects {
+  background: linear-gradient(rgba(255, 254, 254, 0.7), rgba(0, 0, 0, 0.3));
+  transition: box-shadow 0.3s, transform 0.3s ease-in-out;
+}
+.input-effects button {
+  background-color: #f0eded;
+  border: none;
+}
+
+
+.input-effects:hover {
+  transform: scale(1.01);
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.input-field-effects {
+  background: rgb(201, 200, 200);
+  border: 1px solid gray;
+  transition: box-shadow 0.5s ease-in-out;
+}
+.input-field-effects::placeholder{
+  
+  color: #fff;
+}
+
+.input-field-effects:hover {
+  /* transform: scale(1.001); */
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.span-error {
+  color: rgb(206, 15, 15);
+  font-size: smaller;
+  display: none;
+}
+input:invalid[focused="true"]{
+  border: 1px solid rgb(206, 15, 15);
+}
+
+input:invalid[focused="true"] ~ .span-error{
+  display: block;
+}
+/* input:invalid ~ .submit-btn:disabled */
+
+h1 {
+  color: hsl(0, 0%, 28%);
+  font-size: 50px;
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 7px;
+  cursor: pointer;
+}
+
+.link-effect {
+  transition: 0.5s ease-out;
+  font-size: 13px;
+  font-weight: 500;
+  color: #000;
+}
+/* link-effect:hover span:nth-child(1) {
+  margin-right: 5px;
+} */
+/* h1:hover span:nth-child(1):after {
+  content: "'";
+} */
+/* h1:hover span:nth-child(2) {
+  margin-left: 30px;
+} */
+.link-effect:hover {
+  color: #fff;
+  font-weight: bolder;
+  letter-spacing: 5px;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+}
+
+#root {
+  height: 100vh;
+}
+.input-element {
+  cursor: text;
+}
